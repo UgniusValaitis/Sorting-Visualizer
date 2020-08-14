@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>
+      Sorting algorithms
+    </title>
+    <script>
+      if (typeof Proxy === "undefined")
+        alert("The browser is not supported, please use chrome or firefox");
+    </script>
+    <link rel="stylesheet" href="main.css" />
+    <script src="main.js"></script>
+  </head>
+
+  <body>
+    <div class="main">
+      <div id="sort-view">
+        <ul></ul>
+      </div>
+      <div class="option">
+        <div class="row">
+          <button id="start">start</button>
+          <button id="stop">stop</button>
+          <button id="shuffle">shuffle</button>
+          <select id="algorithm">
+            <option value="selection">selection</option>
+            <option value="insert">insertion</option>
+            <option value="bubble">bubble</option>
+            <option value="comb">comb</option>
+            <option value="merge">merge</option>
+            <option value="quick">quick</option>
+            <option value="shell">shell</option>
+            <option value="heap">heap</option>
+          </select>
+          <div class="input-box">
+            <label class="key" for="amount">amount</label>
+            <input id="amount" class="value" value="50" />
+          </div>
+          <div class="input-box">
+            <label class="key" for="speed">speed/ms</label>
+            <input id="speed" class="value" value="50" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
